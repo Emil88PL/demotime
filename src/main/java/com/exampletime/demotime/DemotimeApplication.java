@@ -16,12 +16,23 @@ public class DemotimeApplication {
 		ApplicationContext context = SpringApplication.run(DemotimeApplication.class, args);
 		
 		Object byName = context.getBean("timenow");
-		String byType = context.getBean(String.class);
-		String byBoth = context.getBean("timenow", String.class);
+		Object greeting = context.getBean("greeting");
+		Object farewell = context.getBean("farewell");
+
+
+		System.out.println("Greeting" + " " + greeting);
+		System.out.println("Greeting" + " " + greeting.hashCode());
+
+		System.out.println("Farweell" + " " + farewell.hashCode());
+		System.out.println("Farweell" + " " + farewell.hashCode());
+
+		
+		// String byType = context.getBean(String.class);
+		// String byBoth = context.getBean("timenow", String.class);
 	
-		System.out.println("By Name " + byName);
-		System.out.println("By Type " + byType);
-		System.out.println("By Both " + byBoth);
+		 System.out.println("By Name " + byName);
+		// System.out.println("By Type " + byType);
+		// System.out.println("By Both " + byBoth);
 
 	}
 }
