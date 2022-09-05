@@ -1,0 +1,27 @@
+package com.exampletime.demotime;
+
+import java.time.LocalTime;
+
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@SpringBootApplication
+public class DemotimeApplication {
+
+	public static void main(String[] args) {
+		ApplicationContext context = SpringApplication.run(DemotimeApplication.class, args);
+		
+		Object byName = context.getBean("timenow");
+		String byType = context.getBean(String.class);
+		String byBoth = context.getBean("timenow", String.class);
+	
+		System.out.println("By Name " + byName);
+		System.out.println("By Type " + byType);
+		System.out.println("By Both " + byBoth);
+
+	}
+}
