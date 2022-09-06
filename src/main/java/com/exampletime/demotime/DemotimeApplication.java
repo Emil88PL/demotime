@@ -36,3 +36,16 @@ public class DemotimeApplication {
 
 	}
 }
+
+
+
+
+// <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation -->
+// <dependency>
+//     <groupId>org.springframework.boot</groupId>
+//     <artifactId>spring-boot-starter-validation</artifactId>
+//     <version>2.7.3</version>
+// </dependency>
+
+// from QA Trainer to everyone in this session:    11:39 AM
+// @Pattern( regexp = "       "
