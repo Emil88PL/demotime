@@ -21,7 +21,7 @@ public class DemotimeApplication {
 
 
 		System.out.println("Greeting" + " " + greeting);
-		System.out.println("Greeting" + " " + greeting.hashCode());
+		System.out.println("Greeting" + " " + greeting.hashCode()); //
 
 		System.out.println("Farweell" + " " + farewell.hashCode());
 		System.out.println("Farweell" + " " + farewell.hashCode());

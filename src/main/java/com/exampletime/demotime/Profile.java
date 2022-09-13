@@ -1,6 +1,6 @@
 package com.exampletime.demotime;
 
-import javax.validation.constraints.Max;  // TO work you need dependency spring-boot-starter-validation !!!!!!
+// import javax.validation.constraints.Max;  // TO work you need dependency spring-boot-starter-validation !!!!!!
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -8,7 +8,7 @@ import javax.validation.constraints.Pattern;
 public class Profile {
 
     @Min(3)
-    @Max(12)
+   // @Max(12)
 
     private String forename;
 
