@@ -21,10 +21,10 @@ public class DemotimeApplication {
 
 
 		System.out.println("Greeting" + " " + greeting);
-		System.out.println("Greeting" + " " + greeting.hashCode()); //
+		System.out.println("Greeting" + " " + greeting.hashCode()); //hashCode
 
 		System.out.println("Farweell" + " " + farewell.hashCode());
-		System.out.println("Farweell" + " " + farewell.hashCode());
+		//System.out.println("Farweell" + " " + farewell.hashCode());
 
 		
 		// String byType = context.getBean(String.class);
